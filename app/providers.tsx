@@ -6,7 +6,6 @@ import { WagmiProvider, createConfig, http } from "wagmi";
 import { base, baseSepolia } from "wagmi/chains";
 import { coinbaseWallet, injected } from "wagmi/connectors";
 
-const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID;
 const connectors = [injected(), coinbaseWallet({ appName: "mackx ecomm" })];
 
 export const wagmiConfig = createConfig({
