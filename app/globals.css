@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root { color-scheme: dark; --bg: #0b0d12; --panel: #141821; --muted: #a0a8b8; --line: #293140; --accent: #8b9cff; }
+* { box-sizing: border-box; }
+html { min-height: 100%; background: var(--bg); }
+body { margin: 0; color: #f7f8fb; background: radial-gradient(ellipse at 50% -20%, #202b4a 0%, var(--bg) 55%); font-family: Arial, Helvetica, sans-serif; }
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; }
+.shell { max-width: 1120px; margin: 0 auto; padding: 28px 24px 80px; }
+.nav { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:12px 0 28px; border-bottom:1px solid var(--line); }
+.brand { font-size:20px; font-weight:800; letter-spacing:-.7px; }
+.brand span { color:var(--accent); }
+.pill { border:1px solid #435078; color:#c9d2ff; background:#1b2340; border-radius:999px; padding:8px 12px; font-size:12px; }
+.hero { padding:86px 0 64px; max-width:780px; }
+.eyebrow { color:#aab7ff; text-transform:uppercase; letter-spacing:2px; font-size:12px; font-weight:700; }
+h1 { font-size:clamp(42px,7vw,76px); line-height:1.02; letter-spacing:-3px; margin:18px 0; }
+.lead { max-width:650px; color:var(--muted); font-size:18px; line-height:1.7; }
+.actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:28px; }
+.primary,.secondary { border-radius:12px; padding:13px 18px; font-weight:700; border:1px solid var(--line); }
+.primary { background:#9aa8ff; color:#0b1020; border-color:#9aa8ff; }
+.secondary { background:#171d29; color:#f7f8fb; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:14px; margin-top:20px; }
+.panel { border:1px solid var(--line); background:rgba(20,24,33,.86); border-radius:18px; padding:22px; }
+.panel h3 { margin:0 0 9px; font-size:16px; }
+.panel p { margin:0; color:var(--muted); line-height:1.6; font-size:14px; }
+.section-title { margin:0; font-size:24px; letter-spacing:-.6px; }
+.small { color:var(--muted); font-size:13px; line-height:1.6; }
+.wallet { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px; }
+.wallet button { border:0; border-radius:10px; background:#9aa8ff; color:#0b1020; padding:11px 15px; font-weight:700; }
+footer { border-top:1px solid var(--line); margin-top:60px; padding-top:22px; color:var(--muted); font-size:12px; }
